@@ -1,4 +1,5 @@
 function highlight(table) {
+
   for (let i = 1; i < table.rows.length; i++) {
     if ((table.rows[i].cells[3].dataset.available) === 'true') {
       table.rows[i].classList.add("available");
