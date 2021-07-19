@@ -1,3 +1,9 @@
 function makeFriendsList(friends) {
-  // ваш код...
+  let unorderedList = document.createElement('ul');
+   
+   for (let friend of friends) {
+     unorderedList.innerHTML += `<li>${friend.firstName} ${friend.lastName}</li>`;
+   }
+  
+   return unorderedList;
 }
